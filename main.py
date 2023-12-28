@@ -1,10 +1,9 @@
 #본 프로그램은 2023년 연세대학교 워크스테이션 프로젝트로 작성됨
 #Version: 1.0.0
 #Author: 서동진
-#Description: 정부제공 OpenAPI를 사용하여 국회 의안활동 정보를 가져오고 정리하여 유저들에게
-#             제공하는 프로그램이다. 이를 위해 big data를 활용하여 정보의 중요도를 판단하고
-#             인공지능 모델을 활용하여 내용을 요약하고, 유저들의 편의를 위해 email 형식으로
-#             정보를 제공한다.
+#Description: 정부제공 OpenAPI를 사용하여 국회 입법 예고 정보를 가져오고 정리하여 유저들에게
+#             제공하는 프로그램이다. 이를 위해 OpenAI의 GPT-3 API를 사용하여 입법 예고 정보를
+#             내용을 요약하고, 유저들의 편의를 위해 email 형식으로 정보를 제공한다.
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup
